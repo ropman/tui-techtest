@@ -1,0 +1,14 @@
+config:
+  rest:
+    readtimeout: 10000
+    github-client:
+      service-url: "https://api.github.com"
+      fetch-public-repositories-url: "/users/{username}/repos"
+      fetch-branches-url: "/repos/{username}/{repositoryName}/branches"
+      accept-header: "application/vnd.github+json"
+      version-header: "2022-11-28"
+
+logging:
+  level:
+    root: INFO
+    com.ciklum.tuitechtest.client.GithubClient: DEBUG
